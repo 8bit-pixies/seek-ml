@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "seek-ml"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "voyager_ml"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+voyager = "^2.0.2"
+fastapi = "^0.104.1"
+pydantic = "^2.4.2"
+typer = "^0.9.0"
+black = "^23.10.1"
+isort = "^5.12.0"
+ruff = "^0.1.4"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+pyright = "^1.1.334"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+exclude = ["tests"]
